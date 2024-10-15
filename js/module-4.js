@@ -258,27 +258,109 @@
 
 
 // IF ELSE ??????
-function calculateTotalPrice(productName) {
-  const products = [
-    { name: "Radar", price: 1300, quantity: 4 },
-    { name: "Scanner", price: 2700, quantity: 3 },
-    { name: "Droid", price: 400, quantity: 7 },
-    { name: "Grip", price: 1200, quantity: 9 },
-    ];
+// function calculateTotalPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//     ];
     
-    let sum = `Product ${productName} not found!`;
+//     let sum = `Product ${productName} not found!`;
 
-    for (const product of products) {
-       if (product.name === productName) {
-           sum = product.price * product.quantity;
-       } 
-    }
-    return sum;
-}
+//     for (const product of products) {
+//        if (product.name === productName) {
+//            sum = product.price * product.quantity;
+//        }
+//     }
+//     return sum;
+// }
 
-console.log(calculateTotalPrice("Blaster"));
-console.log(calculateTotalPrice("Radar"));
-console.log(calculateTotalPrice("Droid"));
-console.log(calculateTotalPrice("Grip"));
-console.log(calculateTotalPrice("Scanner"));
+// console.log(calculateTotalPrice("Blaster"));
+// console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Droid"));
+// console.log(calculateTotalPrice("Grip"));
+// console.log(calculateTotalPrice("Scanner"));
+
+
+
+// const atTheOldToad = {
+
+//   potions: [],
+  
+//   getPotions() {
+//     return "List of all available potions";
+//   },
+
+// addPotion(potionName) {
+//   return `Adding ${potionName}`;
+// },
+// }
+
+// console.log(atTheOldToad.getPotions()); // List of all available potions
+// console.log(atTheOldToad.addPotion("Invisibility")); // Adding Invisibility
+// console.log(atTheOldToad.addPotion("Power potion")); // Adding Power potion
+
+
+
+// const bookShelf = {
+//   books: ["The Last Kingdom", "The Mist"],
+//   getBooks() {
+//     return this.books;
+//   }
+// };
+
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom", "The Mist"]
+
+
+
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Stone skin"],
+//   getPotions() {
+//     return this.potions;
+//   },
+// };
+
+// console.log(atTheOldToad.getPotions());
+
+
+
+
+
+// const bookShelf = {
+//   books: ["The Last Kingdom"],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//   }
+// };
+
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
+// bookShelf.addBook("The Mist");
+// bookShelf.addBook("Dream Guardian");
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom", "The Mist", "Dream Guardian"]
+
+
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Stone skin"],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+
+//     this.potions.push(potionName)
+//   },
+// };
+
+// console.log(atTheOldToad.getPotions());
+
+// atTheOldToad.addPotion("Invisibility");
+// console.log(atTheOldToad.getPotions());
+
+// atTheOldToad.addPotion("Power potion");
+// console.log(atTheOldToad.getPotions());
 
