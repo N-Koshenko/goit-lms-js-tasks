@@ -248,8 +248,6 @@
 //     return arr;
 // }
 
-
-
 // console.log(getAllPropValues("name"));
 // console.log(getAllPropValues("quantity"));
 // console.log(getAllPropValues("price"));
@@ -284,8 +282,12 @@
 
 
 
-// const atTheOldToad = {
+// Объяви объект atTheOldToad со следующими свойствами:
+// potions — массив. Пусть сейчас он будет пустым;
+// getPotions() — метод, возвращающий строку "List of all available potions";
+// addPotion(potionName) — метод, возвращающий строку "Adding <potionName>", где potionName это значение параметра potionName;
 
+// const atTheOldToad = {
 //   potions: [],
   
 //   getPotions() {
@@ -302,6 +304,7 @@
 // console.log(atTheOldToad.addPotion("Power potion")); // Adding Power potion
 
 
+// Используя ключевое слово this напиши синтаксис для метода объекта getBooks(), чтобы его вызов давал доступа к значению свойства books
 
 // const bookShelf = {
 //   books: ["The Last Kingdom", "The Mist"],
@@ -314,6 +317,11 @@
 
 
 
+// Объект atTheOldToadобладает следующими свойствами:
+
+// potions — массив строк, с названиями зилья
+// getPotions() — метод, возвращающий строку"List of all available potions"
+// Измени код метода объекта getPotions() так, чтобы он возвращал значение свойства potions
 
 // const atTheOldToad = {
 //   potions: ["Speed potion", "Stone skin"],
@@ -327,6 +335,7 @@
 
 
 
+// Используя ключевое слово this, напиши синтаксис для метода объекта addBook(bookName), чтобы его вызов позволял добавление нового элемента в значение свойства books, который будет принят в параметр bookName
 
 // const bookShelf = {
 //   books: ["The Last Kingdom"],
@@ -344,6 +353,11 @@
 // console.log(bookShelf.getBooks()); // ["The Last Kingdom", "The Mist", "Dream Guardian"]
 
 
+// Объект atTheOldToad обладает следующими свойствами:
+// potions — массив строк, с названиями зилья
+// getPotions() — метод, возвращающий значение свойства potions
+// addPotion() — метод, принимающий параметр строка с названием зельяpotionName
+// Измени код метода addPotion(potionName) так, чтобы он добавлял снадобье potionName в конец массива в свойстве potions.
 
 // const atTheOldToad = {
 //   potions: ["Speed potion", "Stone skin"],
@@ -364,3 +378,135 @@
 // atTheOldToad.addPotion("Power potion");
 // console.log(atTheOldToad.getPotions());
 
+
+
+// Добавь метод объекта getAverageRating(), который будет возвращать средний рейтинг книг:
+// 1) Объяви метод getAvarageRating в объекте;
+// 2) Объяви переменную totalRating для хранения общего рейтинга.
+// 3) Перебери массив книг по ссылке this.books в цикле for...of.
+// 4) На каждой итерации добавь к общему рейтингу - рейтинг книги.
+// 5) После завершения цикла верни результат разделения общего рейтинга на количество книг(используя ссылку this.books).
+
+// const bookShelf = {
+//   books: [
+//     { title: "The Last Kingdom", rating: 8 },
+//     { title: "The Mist", rating: 6 },
+//   ],
+//   getAvarageRating() {
+//     let totalRating = 0;
+
+//     for (const book of this.books) {
+//       totalRating += book.rating;
+//     }
+
+//     return totalRating / this.books.length;
+//   },
+// };
+
+// console.log(bookShelf.getAvarageRating()); // 7
+
+
+
+
+
+// Объект atTheOldToad обладает следующими свойствами:
+// обладает следующими свойствами:
+// potions — массив строк, с названиями зелья;
+// getPotions() — метод, возвращающий значение свойства potions;
+// addPotion() — метод, принимающий параметр объекта нового зелья newPotion и добавляющий его в конец массива в свойстве potions.
+// Добавь метод объекта getTotalPrice(), который должен возвращать общую стоимость всех зелий по свойству potions.
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     this.potions.push(newPotion);
+//     },
+  
+//     getTotalPrice() {
+//         let totalPrice = 0;
+
+//         for (const potion of this.potions) {
+//             totalPrice += potion.price;
+//         }
+//         return totalPrice
+//     },
+// };
+
+// console.log(atTheOldToad.getPotions()); // [{name: 'Speed potion', price: 460}, {name: 'Stone skin', price: 520}]
+
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
+// console.log(atTheOldToad.getPotions()); // [{name: 'Speed potion', price: 460}, {name: 'Stone skin', price: 520}, {name: 'Invisibility', price: 620}]
+
+// atTheOldToad.addPotion({ name: "Power potion", price: 270 })
+// console.log(atTheOldToad.getPotions()); // [{name: 'Speed potion', price: 460}, {name: 'Stone skin', price: 520}, {name: 'Invisibility', price: 620}, {name: 'Power potion', price: 270}]
+
+// console.log(atTheOldToad.getTotalPrice()); // 1870
+
+
+
+
+// Метод changeRating ожидает название книги, которой необходимо изменить рейтинг, и новое значение рейтинга, которое нужно подменить в объекте.
+// Перебор массива объектов в цикле, например for...of.
+// Добавление проверки совпадения значения свойства объекта в текущей итерации и заданного значения (if).
+// После вызова метода changeRating свойство rating объекта с совпадающим названием bookName будет обновлено на newRating.
+
+// const bookShelf = {
+//   books: [
+//     { title: "The Last Kingdom", rating: 8 },
+//     { title: "The Mist", rating: 6 },
+//   ],
+// 	changeRating(bookName, newRating) {
+// 		for(const book of this.books) {
+// 			if(book.title === bookName) {
+// 			 book.rating = newRating;
+// 			}
+//         }
+//         	}
+// };
+
+// bookShelf.changeRating("The Mist", 9);
+// bookShelf.changeRating("The Last Kingdom", 4);
+
+// console.log(bookShelf.books);
+
+
+
+
+// Объект atTheOldToad обладает следующими свойствами:
+// potions — массив объектов зелья;
+// getPotions() — метод, возвращающий значение свойства potions;
+// updatePotionName() — метод, принимающий два параметра строк oldName и newName;
+
+// Дополни метод updatePotionName(oldName, newName) таким образом, чтобы он обновлял название зелья с oldName на newName в массиве свойства potions.
+
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Stone skin", price: 520 },
+  ],
+  getPotions() {
+    return this.potions;
+  },
+    updatePotionName(oldName, newName) {
+      
+        for (const potion of this.potions) {
+            if (potion.name === oldName) {
+                potion.name = newName;
+            }
+        }
+  },
+};
+
+
+atTheOldToad.updatePotionName("Stone skin", "Invisibility");
+console.log(atTheOldToad.potions); // [{name: 'Speed potion', price: 460}, {name: 'Invisibility', price: 520}]
+
+
+atTheOldToad.updatePotionName("Speed potion", "Polymorth");
+console.log(atTheOldToad.potions); // [{name: 'Polymorth', price: 460}, {name: 'Invisibility', price: 520}]
