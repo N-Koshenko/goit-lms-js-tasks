@@ -1,1 +1,1 @@
-Completing the homework for the JavaScript course "Module 3. Arrays and functions."
+Completing the tasks for the JavaScript course of the GoIT LMS

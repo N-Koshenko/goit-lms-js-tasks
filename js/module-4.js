@@ -1,20 +1,3 @@
-function filterArray(numbers, value) {
-    const arr = [];
-    for (let item of numbers) {
-        if (item > value) {
-            arr.push(item);
-        }
-    }
-    return arr;
-}
-
-console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
-console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
-console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
-console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
-console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
-
-
 
 // const book = {
 //   title: "The Last Kingdom",
@@ -24,9 +7,11 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // };
 
 // for (const key in book) {
-//     console.log(key); // Ключ
-//     console.log(book[key]);  // Значення властивості з таким ключем
+//     // console.log(key); // Ключ
+//     // console.log(book[key]);  // Значення властивості з таким ключем
 // }
+
+
 
 
 
@@ -52,6 +37,8 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 
 
 
+
+
 // const book = {
 
 //   title: "The Last Kingdom",
@@ -65,6 +52,9 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // console.log(keys); // ['title', 'author', 'genres', 'rating']
 
 
+
+
+
 // const book = {
 //   author: "Bernard Cornwell",
 //   genres: ["historical prose", "adventure"],
@@ -74,8 +64,10 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 
 // for (const key of keys) {
 // //   console.log(key); // Ключ
-//   console.log(book[key]); // Значення властивості
+// //   console.log(book[key]); // Значення властивості
 // }
+
+
 
 
 // const apartment = {
@@ -94,6 +86,10 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // console.log(values);
 // console.log(keys);
 
+
+
+
+
 // function countProps(object) {
 //   let propCount = 0;
 
@@ -107,19 +103,22 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // }
 
 
-// // function countProps(object) {
-// //   let propCount = 0;
+
+
+// function countProps(object) {
+//   let propCount = 0;
 
 // //  const key = Object.keys(object);
     
-// //     return propCount = key.length;
-// // }
-
-
+//     return propCount = key.length;
+// }
 
 // console.log(countProps({}));
 // console.log(countProps({ name: "Mango", age: 2 }));
 // console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+
+
 
 
 // const book = {
@@ -132,6 +131,8 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // console.log(values); // ["The Last Kingdom", "Bernard Cornwell", 8.38]
 
 
+
+
 // const apartment = {
 //   descr: "Spacious apartment in the city center",
 //   rating: 4,
@@ -141,8 +142,10 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // const keys = Object.keys(apartment);
 // const values = Object.values(apartment);
 
-// console.log(keys);
-// console.log(values);
+// // console.log(keys);
+// // console.log(values);
+
+
 
 
 // function countTotalSalary(salaries) {
@@ -181,6 +184,8 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // console.log(rgbColors);
 
 
+
+//IF ELSE
 // function getProductPrice(productName) {
 //   const products = [
 //     { name: "Radar", price: 1300, quantity: 4 },
@@ -199,13 +204,13 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 //    return cost;
 //  }
 
-
-
 // console.log(getProductPrice("Radar"));
 // console.log(getProductPrice("Grip"));
 // console.log(getProductPrice("Scanner"));
 // console.log(getProductPrice("Droid"));
 // console.log(getProductPrice("Engine"));
+
+
 
 // const books = [
 //   { title: "The Last Kingdom", author: "Bernard Cornwell", rating: 8.2 },
@@ -220,6 +225,8 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // }
 
 // console.log(titles); // ["The Last Kingdom", "Beside Still Waters", "The Dream of a Ridiculous Man"]
+
+
 
 // function getAllPropValues(propName) {
 //   const products = [
@@ -248,27 +255,30 @@ console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 // console.log(getAllPropValues("price"));
 // console.log(getAllPropValues("category"));
 
-// function calculateTotalPrice(productName) {
-//   const products = [
-//     { name: "Radar", price: 1300, quantity: 4 },
-//     { name: "Scanner", price: 2700, quantity: 3 },
-//     { name: "Droid", price: 400, quantity: 7 },
-//     { name: "Grip", price: 1200, quantity: 9 },
-//     ];
+
+
+// IF ELSE ??????
+function calculateTotalPrice(productName) {
+  const products = [
+    { name: "Radar", price: 1300, quantity: 4 },
+    { name: "Scanner", price: 2700, quantity: 3 },
+    { name: "Droid", price: 400, quantity: 7 },
+    { name: "Grip", price: 1200, quantity: 9 },
+    ];
     
-//     let sum = `Product ${productName} not found!`;
+    let sum = `Product ${productName} not found!`;
 
-//     for (const product of products) {
-//        if (product.name === productName) {
-//            sum = product.price * product.quantity;
-//        } 
-//     }
-//     return sum;
-// }
+    for (const product of products) {
+       if (product.name === productName) {
+           sum = product.price * product.quantity;
+       } 
+    }
+    return sum;
+}
 
-// console.log(calculateTotalPrice("Blaster"));
-// console.log(calculateTotalPrice("Radar"));
-// console.log(calculateTotalPrice("Droid"));
-// console.log(calculateTotalPrice("Grip"));
-// console.log(calculateTotalPrice("Scanner"));
+console.log(calculateTotalPrice("Blaster"));
+console.log(calculateTotalPrice("Radar"));
+console.log(calculateTotalPrice("Droid"));
+console.log(calculateTotalPrice("Grip"));
+console.log(calculateTotalPrice("Scanner"));
 
