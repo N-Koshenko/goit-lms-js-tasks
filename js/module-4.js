@@ -485,28 +485,174 @@
 
 // Дополни метод updatePotionName(oldName, newName) таким образом, чтобы он обновлял название зелья с oldName на newName в массиве свойства potions.
 
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Stone skin", price: 520 },
-  ],
-  getPotions() {
-    return this.potions;
-  },
-    updatePotionName(oldName, newName) {
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   getPotions() {
+//     return this.potions;
+//   },
+//     updatePotionName(oldName, newName) {
       
-        for (const potion of this.potions) {
-            if (potion.name === oldName) {
-                potion.name = newName;
-            }
-        }
-  },
-};
+//         for (const potion of this.potions) {
+//             if (potion.name === oldName) {
+//                 potion.name = newName;
+//             }
+//         }
+//   },
+// };
 
 
-atTheOldToad.updatePotionName("Stone skin", "Invisibility");
-console.log(atTheOldToad.potions); // [{name: 'Speed potion', price: 460}, {name: 'Invisibility', price: 520}]
+// atTheOldToad.updatePotionName("Stone skin", "Invisibility");
+// console.log(atTheOldToad.potions); // [{name: 'Speed potion', price: 460}, {name: 'Invisibility', price: 520}]
 
 
-atTheOldToad.updatePotionName("Speed potion", "Polymorth");
-console.log(atTheOldToad.potions); // [{name: 'Polymorth', price: 460}, {name: 'Invisibility', price: 520}]
+// atTheOldToad.updatePotionName("Speed potion", "Polymorth");
+// console.log(atTheOldToad.potions); // [{name: 'Polymorth', price: 460}, {name: 'Invisibility', price: 520}]
+
+
+
+
+// Используя синтаксис остаточных параметров (...rest), дополни код функции add() так, чтобы она принимала любое количество аргументов в параметр args и возвращала их сумму.
+
+
+// function add(...args) {
+//   let sum = 0;
+//   for (const num of args) {
+//      sum += num;
+//   }
+//   return sum;
+// }
+
+// console.log(add(15, 27)); // 42
+// console.log(add(12, 4, 11, 48)); // 75
+// console.log(add(32, 6, 13, 19, 8)); // 78
+
+
+
+
+// Функция addOverNum() принимает случайное количество аргументов чисел.
+// Дополни код функции таким образом, чтобы она вычисляла сумму только тех аргументов, которые больше заданного числа, числа которое всегда будет передано первым аргументом.
+// Для решения этой задачи сделать следующее:
+// 1) Первый параметр value представляет заданное число, а остальные аргументы собраны синтаксисом (...args);
+// 2) Внутри функции инициализирована переменная для хранения общей суммы;
+// 3) Затем каждому аргументу  пройден с помощью цикла;
+// 4) Если аргумент больше указанного числа, он добавлен к общей сумме;
+// 5) Возврат общей сумму из функции
+
+// function addOverNum(value, ...args) {
+//   let sum = 0;
+//   for (const num of args) {
+//     if (num > value) {
+//     sum += num;
+//    }
+//   }
+//   return sum;
+//  }
+
+
+
+// console.log(addOverNum(50, 15, 27)); // 0
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8)); // 71
+// console.log(addOverNum(15, 32, 6, 13, 19, 8)); // 51
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36)); // 218
+      
+
+
+
+
+
+// Функция getExtremeScores(scores) принимает массив отметок (чисел) в параметре scores.
+// Дополни код функции так, чтобы она возвращала объект с двумя свойствами:
+// Свойство best должно содержать наибольшее число из массива scores;
+// Свойство worst должно содержать наименьшее число из массива scores.
+// Используй оператор (...spread) и методы Math.max() и Math.min().
+
+// function getExtremeScores(scores) {
+//   const object = { best: 0, worst: 0 };
+//   object.best = Math.max(...scores);
+//   object.worst = Math.min(...scores);
+//   return object;
+//  }
+
+
+// console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26])); // { best: 93, worst: 17 }
+// console.log(getExtremeScores([19, 7, 4, 17, 81, 24])); // { best: 81, worst: 4 }
+
+
+
+
+
+
+// В переменных firstGroupScores, secondGroupScores  и thirdGroupScores хранятся результаты тестирования отдельных групп.
+// Используя распыление, дополни код таким образом, чтобы:
+// 1) В переменной allScores сохранялся массив всех результатов от первой до третьей группы включительно.
+// 2) В переменной bestScore был самый высокий общий балл.
+// 3) В переменной worstScore был самый низкий общий балл.
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+// console.log(allScores); // [64, 42, 93, 89, 14, 51, 26, 29, 47, 18, 97, 81]
+// console.log(bestScore); // 97
+// console.log(worstScore); // 14
+
+
+
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15, propD: 20 };
+
+// const third = { ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15, propD: 20 }
+
+// const fourth = { ...second, ...first };
+// console.log(fourth); // { propA: 5, propB: 10, propC: 50, propD: 20 }
+
+
+
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15 };
+
+// const third = { propB: 20, ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15 }
+
+// const fourth = { ...first, ...second, propB: 20 };
+// console.log(fourth); // { propA: 5, propB: 20, propC: 15 }
+
+// const fifth = { ...first, propB: 20, ...second };
+// console.log(fifth); // { propA: 5, propB: 20, propC: 15 }
+
+
+
+
+
+// В конструкторе можно создавать новые тесты, для которых есть настройки по умолчанию, которые хранятся в переменной defaultSettings. При создании теста все или часть настроек можно переопределить, пользовательские настройки сохраняются в переменной overrideSettings.
+// Для того чтобы получить финальные настройки теста, необходимо взять настройки по умолчанию и поверх них применить переопределенные пользовательские настройки.
+// Запиши код finalSettings таким образом, чтобы в переменной образовался объект финальных настроек теста.
+
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+
+// const finalSettings = {...defaultSettings, ...overrideSettings};
+
+
+
+// console.log(finalSettings); // { theme: "light",  public: "false",  withPassword: "true",  minNumberOfQuestions: 10,  timePerQuestion: 30}
