@@ -1,0 +1,71 @@
+/* #region Событие SUBMIT */
+/* body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
+} */
+/* #endregion Событие SUBMIT */
+
+/* #region Событие CHANGE */
+/* body {
+  margin: 16px;
+}
+
+select {
+  padding: 4px;
+} */
+/* #endregion Событие CHANGE */
+
+/* #region Событие INPUT */
+/* body {
+  margin: 16px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+}
+
+p {
+  overflow-wrap: anywhere;
+}
+
+input {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px;
+  font: inherit;
+  letter-spacing: inherit;
+} */
+
+/* #endregion Событие INPUT */
+
+/* #region Событие focus & blur */
+/* body {
+  margin: 16px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+}
+
+input {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+button {
+  display: inline-flex;
+  padding: 4px;
+  margin-right: 2px;
+  margin-left: 2px;
+} */
+/* #endregion Событие focus & blur */
